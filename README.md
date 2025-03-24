@@ -52,3 +52,5 @@ export default tseslint.config({
   },
 })
 ```
+
+Click [here](https://react-qr-code-generator-bice.vercel.app/) to visit the web app.
