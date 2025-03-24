@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
 import QRCode from 'qrcode';
+import defaultQRCode from './assets/img/qr.png';
 
 const App = () => {
   const [qrCode, setQrCode] = useState('');
@@ -61,7 +62,7 @@ const App = () => {
           <img
             className={`w-[85%] ${qrCode ? qrCode : 'opacity-20'}`}
             id='image'
-            src={`${qrCode ? qrCode : '/src/assets/img/qr.png'}`}
+            src={`${qrCode ? qrCode : defaultQRCode}`}
             alt='Generated QR Code'
           />
         </div>
